@@ -40,6 +40,12 @@ class OverviewViewModel : ViewModel() {
     val status: LiveData<String>
         get() = _status
 
+    private val _property = MutableLiveData<MarsProperty>()
+
+    val property: LiveData<MarsProperty>
+        get() = _property
+
+
     /**
      * Call getMarsRealEstateProperties() on init so we can display status immediately.
      */
