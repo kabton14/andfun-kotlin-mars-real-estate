@@ -53,7 +53,7 @@ class PhotoGridAdapter : ListAdapter<MarsProperty, PhotoGridAdapter.MarsProperty
         }
 
         override fun areContentsTheSame(oldItem: MarsProperty, newItem: MarsProperty): Boolean {
-            oldItem.id == newItem.id
+            return oldItem.id == newItem.id
         }
 
     }
