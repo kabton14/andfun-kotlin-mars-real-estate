@@ -16,3 +16,21 @@
  */
 
 package com.example.android.marsrealestate.overview
+
+import android.view.ViewGroup
+import androidx.recyclerview.widget.ListAdapter
+import com.example.android.marsrealestate.network.MarsProperty
+
+class PhotoGridAdapter : ListAdapter<MarsProperty, PhotoGridAdapter.MarsPropertyViewHolder>(DiffCallback){
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): PhotoGridAdapter.MarsPropertyViewHolder {
+        TODO("Not yet implemented")
+    }
+
+    override fun onBindViewHolder(holder: PhotoGridAdapter.MarsPropertyViewHolder, position: Int) {
+        TODO("Not yet implemented")
+    }
+}
+
