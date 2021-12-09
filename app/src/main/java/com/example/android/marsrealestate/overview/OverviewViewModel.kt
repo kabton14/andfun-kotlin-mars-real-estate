@@ -33,6 +33,8 @@ import retrofit2.Response
  */
 class OverviewViewModel : ViewModel() {
 
+    enum class MarsApiStatus { LOADING, ERROR, DONE }
+
     // The internal MutableLiveData String that stores the status of the most recent request
     private val _status = MutableLiveData<String>()
 
