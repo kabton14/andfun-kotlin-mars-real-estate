@@ -69,6 +69,7 @@ class OverviewViewModel : ViewModel() {
                 }
             } catch (e: Exception) {
                 _status.value = MarsApiStatus.ERROR
+                _properties.value = ArrayList() //clear recycler list
             }
         }
     }
