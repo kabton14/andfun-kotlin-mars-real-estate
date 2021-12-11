@@ -78,4 +78,8 @@ class OverviewViewModel : ViewModel() {
             }
         }
     }
+
+    fun displayPropertyDetails(marsProperty: MarsProperty) {
+        _navigateToSelectedProperty.value = marsProperty
+    }
 }
