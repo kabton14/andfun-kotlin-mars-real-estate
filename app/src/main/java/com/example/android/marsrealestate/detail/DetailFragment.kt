@@ -37,6 +37,9 @@ class DetailFragment : Fragment() {
         binding.lifecycleOwner = this
         val marsProperty = DetailFragmentArgs.fromBundle(arguments!!).selectedProperty
         val viewModelFactory = DetailViewModelFactory(marsProperty, application)
+
+        binding.viewModel = ViewModelProvider(
+            this, viewModelFactory).get(DetailViewModel::class.java)
         return binding.root
     }
 }
