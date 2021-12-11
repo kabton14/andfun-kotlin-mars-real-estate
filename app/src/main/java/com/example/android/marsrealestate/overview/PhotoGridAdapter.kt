@@ -35,6 +35,9 @@ class PhotoGridAdapter(private val onClickListener: OnClickListener  ) : ListAda
 
     override fun onBindViewHolder(holder: PhotoGridAdapter.MarsPropertyViewHolder, position: Int) {
         val marsProperty = getItem(position)
+        holder.itemView.setOnClickListener {
+            onClickListener.onClick(marsProperty)
+        }
         holder.bind(marsProperty)
     }
 
