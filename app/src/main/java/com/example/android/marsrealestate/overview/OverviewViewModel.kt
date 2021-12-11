@@ -82,4 +82,8 @@ class OverviewViewModel : ViewModel() {
     fun displayPropertyDetails(marsProperty: MarsProperty) {
         _navigateToSelectedProperty.value = marsProperty
     }
+
+    fun displayPropertyDetailsComplete() {
+        _navigateToSelectedProperty.value = null
+    }
 }
