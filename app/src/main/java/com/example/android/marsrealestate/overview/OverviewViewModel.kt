@@ -67,7 +67,7 @@ class OverviewViewModel : ViewModel() {
     private fun getMarsRealEstateProperties(filter: MarsApiFilter) {
         viewModelScope.launch {
             try {
-                var listResult = MarsApi.retrofitService.getProperties()
+                var listResult = MarsApi.retrofitService.getProperties(filter.value)
                 _status.value = MarsApiStatus.LOADING
                 if (listResult.isNotEmpty()) {
                     _properties.value = listResult
